@@ -8,3 +8,17 @@ for (const player of players) {
     player.style.backgroundColor = 'tomato';
 } */
 
+// create ul by java 
+var ul = document.createElement('ul');
+document.body.appendChild(ul);
+
+for (var i = 1; i <= 3; i++) {
+    var li = document.createElement('li');
+    li.className = 'file';
+
+    var a = document.createElement('a');
+    a.innerHTML = 'Mama Ami Parsi Dekho-' + i;
+
+    li.appendChild(a);
+    ul.appendChild(li);
+}
